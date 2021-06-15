@@ -36,7 +36,7 @@ export default function JobAds() {
 
                                 <Card.Header>
                                         <Grid.Column style={{ marginTop: "0.5em" }} floated="left" width={3}>
-                                            <Header as='h4'><Link to={`/jobAdDetail/${jobAd.id}`}> {jobAd.jobPosition.positionName}</Link></Header>
+                                            <Header as='h4'><Link to={`/jobAdDetail/${jobAd.id}`}> {jobAd.jobPosition.jobPositionName}</Link></Header>
                                         </Grid.Column>
                                         <Grid.Column style={{ marginTop: "0.5em" }} floated="right" width={3}>
                                             <Header as='h5'>{jobAd.employer.companyName} </Header>

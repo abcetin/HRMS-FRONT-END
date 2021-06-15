@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, NavLink, useHistory } from 'react-router-dom'
+import {NavLink, useHistory } from 'react-router-dom'
 import {  Container, Dropdown, Menu } from 'semantic-ui-react'
 import SignedIn from './SignedIn'
 import SignOut from './SignOut'
@@ -21,7 +21,7 @@ export default function Navi() {
             <Menu  fixed="top" inverted color='teal' >
                 <Container>
                     
-                    <Menu.Item as={NavLink} to="/" color="teal"  to="/" name='HRMS' />
+                    <Menu.Item as={NavLink} to="/" color="teal" name='HRMS' />
                     <Menu.Item name='messages' />
                     <Menu.Menu position='right'>
                         <Dropdown item text='Language'>

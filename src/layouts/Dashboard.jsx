@@ -4,6 +4,7 @@ import { Grid } from 'semantic-ui-react';
 import ApplyDetail from '../pages/ApplyDetail';
 import JobAdDetail from '../pages/JobAdDetail';
 import JobAds from '../pages/JobAds';
+import JobAdForm from "../pages/JobAdForm"
 import Categories from './Categories';
 
 export default function Dashboard() {
@@ -18,8 +19,9 @@ export default function Dashboard() {
                         <Route exact path="/" component={JobAds}/>
                         <Route exact path="/jobAds" component={JobAds}/>
                         <Route exact path="/jobAds/:jobPositionId" component={JobAds}/>
-                        <Route path="/jobAdDetail/:id" component={JobAdDetail}/>
-                        <Route path="/appyl" component={ApplyDetail}/>
+                        <Route exact path="/jobAdDetail/:id" component={JobAdDetail}/>
+                        <Route exact path="/appyl" component={ApplyDetail}/>
+                        <Route exact path="/jobadform" component={JobAdForm}/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
