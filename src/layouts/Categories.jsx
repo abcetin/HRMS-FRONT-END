@@ -8,8 +8,8 @@ export default function Categories() {
     const [jobPositions, setjobPositions] = useState([])
 
     useEffect(() => {
-        let jobPositionService = new JobPositionService()
-        jobPositionService.getAll().then(result => setjobPositions(result.data.data))
+        let jobPositionService = new JobPositionService();
+        jobPositionService.getAll().then(result => setjobPositions(result.data.data));
     })
 
     return (
