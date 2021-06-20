@@ -11,15 +11,6 @@ export default function JobAds() {
     useEffect(() => {
         let jobAdService = new JobAdService()
         jobAdService.getJobAds().then(result => setjobAds(result.data.data));
-        jobAdService.getJobAdByPositionId(jobPositionId).then(result =>{
-            if (setjobAds(result.data.data) == null) {
-                return null;
-            }else{
-                setjobAds(result.data.data)
-            }
-        }
-           
-        )
     },[jobPositionId])
 
     return (

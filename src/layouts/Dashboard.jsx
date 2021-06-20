@@ -18,10 +18,10 @@ export default function Dashboard() {
                     <Grid.Column  width={12}>
                         <Route exact path="/" component={JobAds}/>
                         <Route exact path="/jobAds" component={JobAds}/>
-                        <Route exact path="/jobAds/:jobPositionId" component={JobAds}/>
-                        <Route exact path="/jobAdDetail/:id" component={JobAdDetail}/> 
+                        <Route exact path="/jobAds/:id" component={JobAds}/>
+                        <Route exact path="/jobAdDetail/:jobPositionId" component={JobAdDetail}/> 
                         <Route exact path="/appyl" component={ApplyDetail}/>
-                        <Route exact path="/jobAdForm" component={JobAdForm}/>
+                        <Route path="/jobAdForm" component={JobAdForm}/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

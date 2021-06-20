@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default class JobAdService{
     getJobAds(){
-        return axios.get("http://localhost:8080/api/ads/getall");
+        return axios.get("http://localhost:8080/api/ads/getByActivated?activated=true");
     }
 
     getJobDetail(id){
@@ -19,6 +19,10 @@ export default class JobAdService{
 
     getJobAdByPositionId(jobPositionId){
         return axios.get("http://localhost:8080/api/ads/getByJobPositionId?id="+jobPositionId);
+    }
+
+    postAddToJobAd(ad){
+        return axios.post("http://localhost:8080/api/ads/add",ad)
     }
 
 }
